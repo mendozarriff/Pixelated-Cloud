@@ -1,0 +1,233 @@
+/****************************************
+
+            DESKTOP SYTLING
+
+*****************************************/
+@media only screen and (min-width:768px){
+
+  /*********************************
+      font sizes increased on all 
+      headlines
+  **********************************/
+  #services h1, #about h1, #work h1{
+    font-size: 1.8em;
+  }
+
+  /*********************************
+      Mobile Menu Hidden
+  **********************************/
+  #menu{
+    display: none;
+  }
+  .sidenav{
+    display: none;
+  }
+
+  #desktop-menu-wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  #pixc-logo-top img{
+    display: inline;
+    margin-top: 10px
+  }
+
+  #pixc-logo-top{
+    display: inline;    
+  }
+ 
+ /*********************************
+      company name displayed
+      inblock is used to have
+      elemen†s next to each other
+  **********************************/
+  #pixc-text{
+    display: inline-block;
+  }
+
+  #pixc-text h1, #pixc-text h2{
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 25px;
+  }
+
+  #pixc-text h2{
+    letter-spacing:.32em;
+  }
+  /*********************************
+      Desktop Menu displayed
+      inblock is used to have
+      elemen†s next to each other
+  **********************************/
+
+  #desktop-menu{
+    display: inline-block;
+    float: right;
+    margin: 20px 20px 0 0;
+    word-spacing: 35px;
+    position: relative;
+  }
+
+  #desktop-menu a{
+    text-decoration: none;
+    font-family: 'verdana', cursive;
+    color: gray;
+    font-size: 1em;
+    position: relative;
+  }
+  
+
+  #desktop-menu a:hover{
+    color: #000;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+  }
+
+  #desktop-menu li a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -9px;
+    left: 0;
+    background-color: #AAF200;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  #desktop-menu li a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    color: #AAF200;
+  }
+  
+
+  #desktop-menu li{
+    display: inline;
+  }
+
+  /*********************************
+             Hero text
+  **********************************/
+  #main-image-section h1{
+    font-size: 4em;  
+  }
+
+  #main-image-section h1{
+  top: 25%;
+}
+
+  /*********************************
+            Projects
+  **********************************/
+  #work{
+    width: 100%;
+    clear: both;    
+  }
+
+   #work h1{
+    padding-top: 30px;   
+  }
+
+  .project{
+    width:50%;
+    float: left;
+  }
+
+  .proj-text{
+    font-size: 1em;
+  }
+
+  #services{
+    padding: 4% 4%;
+  }
+
+  #services p:nth-child(2){
+    font-size: 1.2em;
+  }
+  .expertise {
+    width: 33%;
+    float: left;
+    margin-bottom: 50px;
+  }
+
+  /*********************************
+        About section cleared 
+  **********************************/
+
+  #about{
+    clear: both;
+  }
+
+  /*********************************
+            bottom logo
+  **********************************/
+  #pixc-logo-bottom img{
+    width: 100px;
+  }
+
+  #pixc-logo-bottom {
+    margin-bottom: 50px;
+  }
+
+  /*********************************
+    line displayed only on larger
+    devices
+  **********************************/
+  #bottom-line{
+    width: 95%;
+    border-top: 2px gray solid;
+    margin: 0 auto;
+  }
+
+  /*********************************
+            bottom nav
+  **********************************/
+  #bottom-nav li{
+    display: inline;
+  }
+
+  #bottom-nav{
+    word-spacing: 2em;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /*********************************
+            social media
+  **********************************/
+  #social-media{
+    word-spacing: 15px;
+    margin-top: 50px;
+  }
+
+/********************************************
+                Contact
+********************************************/
+
+  #fullName, #company, #title, #email, #phone, #location{
+    max-width: 200px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #message{
+    width: 692px;
+  }
+
+  form{
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/company-logo1.jpg" type="image/png" sizes="16x16">
+    <title>PIXC | Web Development Services</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="script.js"></script>
+  </head>  
+  <body>
+    <header>
+      <div id="desktop-menu-wrapper">
+        <div id="pixc-logo-top">
+          <a href="index.html"><img src="img/company-logo1.jpg" alt="PIXC logo"></a>
+        </div>
+        <div id="pixc-text">
+          <h1>Pixelated</h1>
+          <div></div>
+          <h2>Cloud</h2>
+        </div>
+        <div id="desktop-menu">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu" onclick="openNav()">
+        &#9776;
+      </div>
+      <nav id="mySidenav" class="sidenav">
+        <div id="xbutton"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+        <ul>
+          <li><a href="#services" onclick="closeNav()">Services</a></li>
+          <li><a href="#work" onclick="closeNav()">Work</a></li>
+          <li><a href="#about" onclick="closeNav()">About</a></li>
+          <li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+        </ul>
+        <div id="top-social-media">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+          </div>
+          <div class="copy"><p>&copy; 2017 PIXELATED CLOUD</p></div>
+      </nav>
+    </header>
+    <main>
+      <div id="main-image-section">
+        <img src="img/main-image-mobile.jpg" alt="hero image">
+        <h1 style="text-align:left"><span>Welcome!</span><br>  Let Us Create Your Next Web Project</h1>
+      </div>
+      <div id="services">
+        <h1>Services</h1>
+        <p>Here are some of the services we offer at Pixelated Cloud.  
+        Where user experience is our priority</p>
+        <div class="expertise">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <h2>Design</h2>
+          <p>Design starts with a blank sheet of paper.  The process is to create 
+          structure and layout of the project that meets our client’s needs.  
+          We then use the latest Adobe software to design and build the best UI/UX experience. 
+          </p>
+        </div>
+        <div class="expertise">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h2>Code</h2>
+          <p>All of our websites are done from scratch.  We focus on writting clean, 
+          organized, and efficient code.  We use tools such as HTML5, CSS3, and 
+          Javascript to create an interactive and dynamic user experience.  
+          We also use other types of frameworks such as bootstrap.  
+          Back-end support is also available, we use PHP and MySQL to store and retrieve your data safely.  
+          </p>
+        </div>
+        <div class="expertise">
+          <div id="responsive-bg">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <i class="fa fa-tablet" aria-hidden="true"></i>
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+          </div>
+          <h2>Responsive</h2>
+          <p>Our projects are designed to be viewed seemlessly across all major devices; 
+          from mobile devices, tablets and desktops. You can rest assure your website will be displayed  
+          perfectly in your device of preference.</p>
+        </div>
+      </div>
+      <div id="work">
+        <h1>Work</h1>
+        <a href="http://www.cuevasld.com" target="_blank">
+          <div class="project" id="project1">
+            <img src="img/project01.jpg" alt="project 1 image">            
+             <div class="proj-text" id="cuevas-div1">
+                <p>ARCHITECTURE</p>
+                <p>Cuevas Landscape Design</p>
+              </div>
+          </div>
+        </a>
+        <a href="http://www.cuevasld.com" target="_blank">
+          <div class="project" id="project2">
+            <img src="img/project02.jpg" alt="project 2 image">
+            <div class="proj-text" id="cuevas-div2">
+              <p>WEB-APPLICATION</p>
+              <p>Bookmark Maker</p>
+            </div>
+          </div>
+        </a>
+        <a href="http://www.cuevasld.com" target="_blank">
+          <div class="project" id="project3" >
+            <img src="img/project03.jpg" alt="project 3 image">
+            <div class="proj-text" id="cuevas-div3">
+              <p>WEB-APPLICATION</p>
+              <p>Magic 8 Ball</p>
+            </div>
+          </div>
+        </a>
+        <a href="http://www.cuevasld.com" target="_blank">
+          <div class="project" id="project4">
+            <img src="img/project04.jpg" alt="project 4 image">
+            <div class="proj-text" id="cuevas-div4">
+              <p>Music News</p>
+              <p>Analogvice</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="about">
+        <h1>About</h1>
+        <p id="para1">Established in 2017, Pixelated Cloud is a web development company from San Diego California.  Founder Jose Mendoza started his web development journey in the early 2000s.  Even though Jose had great passion for technology, life took him to a different path.  He was a lab technician in UC San Diego and became a   scientist at IONIS Pharmaceuticals in Carlsbad California.</p>  
+        <p id="para2">Mendoza never stopped his curiosity for technology, taking web and programming courses all throughout his science career.  And in early 2017 Jose decided to leave science behind and devote his life to technology.  And that is how PIXC was born.</p>
+      </div>
+    </main>
+    <footer>
+      <div id="pixc-logo-bottom">
+        <a href="index.html"><img src="img/company-logo1.jpg" alt="company logo"></a>
+      </div>
+      <div id="bottom-line"></div>
+      <div id="social-media">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+      </div>
+      <nav id="bottom-nav">
+        <ul>
+          <li><a href="#sevices">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="copy"><p>&copy; 2017 PIXELATED CLOUD</p></div>
+    </footer>
+  </body>
+</html>

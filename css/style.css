@@ -1,0 +1,484 @@
+/*************************
+
+      MOBILE STYLING
+
+*************************/
+
+body{
+  margin: 0 auto;
+  width: 100%;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+h1, h2, h3, p, li, ul, img, i, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+/**************************
+          HEADER
+**************************/
+header{
+  width: 100%;
+}
+
+/**************************
+        Side Nav
+width is set at 0 default,
+it is set at 100% when the user 
+clicks it
+transition is .5 seconds
+**************************/
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.sidenav a{
+  text-decoration: none;
+  margin: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  font-family: 'verdana', cursive;
+}
+
+.sidenav a:hover{
+  color: #AAF200;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 2em
+}
+
+#menu{
+  position: absolute;
+  top: 0;
+  right: 15px;
+  vertical-align: top;
+  padding: 10px 0 0 0;
+  font-size: 1.5em;
+  font-stretch: expanded;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/**************************
+        X button
+**************************/
+#xbutton{
+  font-size: 1em;
+}
+
+#xbutton a{
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+/**************************
+      desktop menu hidden
+**************************/
+#desktop-menu{
+  display: none;
+}
+
+/**************************
+    top menu social media
+**************************/
+#top-social-media{
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/**************************
+        PIXC logo
+**************************/
+#pixc-logo-top{
+  margin: 10px 0 10px 20px;
+  width: 0;
+}
+
+#pixc-logo-top img{
+  width:40px;
+  cursor: pointer;
+  border: 1px black solid;
+  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+}
+
+#pixc-logo-top img:hover, #pixc-logo-bottom img:hover {
+  opacity: .6;
+  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+  box-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+}
+/**************************
+  PIXC company text hidden
+    on mobile
+**************************/
+#pixc-text {
+  display: none;
+}
+
+/**************************
+        Hero section
+**************************/
+#main-image-section{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+}
+#main-image-section img{
+  -webkit-filter: brightness(60%);
+}
+
+#main-image-section h1{
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  width: 80%;
+  color: #fff;
+  font-size: 2.3em;
+  font-family: 'arial', cursive;
+}
+
+#main-image-section span{
+  font-size: 1.2em;
+}
+
+/**************************
+       Main section
+**************************/
+main{
+  text-align: center;
+}
+
+/**************************
+      Services Icons
+**************************/
+
+ i.fa-pencil, i.fa-code{
+  font-size: 4em;
+  margin: 0 0 20px 0;
+  width: 100px;
+  color:#AAF200;
+  background: #191919;
+  border-radius:18px;
+  height: 80px;
+  line-height: 75px;
+}
+/**************************
+  mobile, tablet, desktop
+  grouped together with DIV
+**************************/
+#responsive-bg{
+  background: #191919;
+  height: 90px;
+  border-radius:18px;
+  width: 150px;
+  margin: 0 auto 20px auto;
+}
+
+i.fa-desktop{
+  margin: 0;
+  color:#AAF200;
+  font-size: 4em;
+  margin: 0;
+  width: 75px;
+  line-height: 95px;
+}
+
+i.fa-tablet{
+  font-size: 2.5em;
+  margin: 0;
+  width: auto;
+  color:#AAF200;
+  background: black;
+  border-radius: 0;
+  height: auto;
+}
+
+i.fa-mobile{
+  font-size: 1.5em;
+  margin: 0;
+  border-radius: 0;
+  width: auto;
+  color:#AAF200;
+  background: black;
+  height: auto;
+}
+
+/**************************
+  Services descriptions
+**************************/
+#services p{
+  padding: 5%;
+  font-family: 'Assistant', sans-serif;
+  word-spacing: 5px;
+  font-size: 1em;
+  color: gray;
+}
+
+#services{
+  padding: 8% 4%;
+  background: #fff;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#services h1, #work h1, #contact-text h1 {
+  font-family: 'verdana', cursive;
+  font-size: 1.3em;
+  color: #191919;
+}
+
+#services h2{
+  font-size: 1.2em;
+}
+
+/**************************
+ #work Div wrapping around
+    all the projects
+**************************/
+#work{
+  margin: 0 auto;
+  width: 100%;
+  background: #f2f2f2;
+}
+#work h1{
+  color: #191919;
+  height: 60px;
+  padding-top: 40px;
+}
+/**************************
+          Projects
+**************************/
+.project{
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2em;
+  margin: 0 auto;
+  transition: .5s;
+}
+
+.project img{
+  -webkit-filter: brightness(60%);
+}
+/**************************
+    Project Descriptions
+**************************/
+.proj-text{
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding-top: 10px;
+  letter-spacing: 3px;
+  line-height: 25px;
+}
+
+
+.project:hover{
+  opacity: .8;
+  font-size: 1.5em;
+  filter:sepia(50%)
+}
+
+/**************************
+      About Section
+**************************/
+
+#about {
+  padding: 30px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#about p{
+  padding: 3% 6%;
+  font-family: 'Assistant', sans-serif;
+  word-spacing: 5px;
+  font-size: 1em;
+  color: gray;
+}
+
+
+/****************************************
+
+              FOOTER SECTION
+
+*****************************************/
+
+footer{
+  width: 100%;
+  height: 500px;
+  background: #191919;
+  text-align: center;
+  color: white;
+}
+/**************************
+    Social Media Icons
+**************************/
+.fa{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+
+}
+.fa-instagram:hover, .fa-linkedin:hover,.fa-twitter:hover, .fa-facebook:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#social-media i{
+  color: black;
+  background: #AAF200;
+  line-height: 50px;
+}
+#social-media{
+  font-size: 1.8em;
+}
+
+/**************************
+      Bottom logo
+**************************/
+#pixc-logo-bottom img{
+  width: 80px;
+  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all .3s ease-in-out 0s;
+}
+
+#pixc-logo-bottom img:hover{
+  box-shadow: 5px 5px 5px #fff;
+}
+
+#pixc-logo-bottom {
+  width: auto;
+  display:inline-block;
+  text-align: center;
+  margin: 50px 0 40px 0;
+}
+
+/**************************
+      Bottom nav
+**************************/
+#bottom-nav a{
+  text-decoration: none;
+  color: white;
+  line-height: 45px;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  font-family: 'verdana', cursive;
+}
+#bottom-nav a:hover{
+  color: gray;
+}
+#bottom-nav{
+  margin: 15px 0;
+}
+
+/**************************
+       Company copy
+**************************/
+.copy {
+  font-size: .75em;
+  color: gray;
+  margin-top: 30px;
+  height: 15px;
+  width: 100%;
+  letter-spacing: 5px;
+}
+
+/****************************************
+
+              CONTACT PAGE
+
+*****************************************/
+
+/**************************
+    Contact Paragraph
+**************************/
+#contact-text{
+  margin: 5%;
+}
+
+#contact-text p{
+  font-family: 'Assistant', sans-serif;
+  font-size: 1em;
+  color: gray;
+}
+
+#contact-text h1{
+  padding-bottom: 5%;
+}
+
+#contact-text a{
+  text-decoration: none;
+  color: black;
+}
+#contact-text a:hover{
+  color: #AAF200;
+}
+
+/**************************
+      Form inputs
+**************************/
+input, textarea{
+  width:80%;
+  height: 30px;
+  background:#f0f5f5;
+  border: none;
+  margin: 5px 0;
+  padding: 16px;
+}
+
+textarea{
+  resize: none;
+  height: 250px;
+}
+
+/**************************
+      submit styling
+**************************/
+#submit{
+  width: 140px;
+  height: 50px;
+  color: #000;
+  border-radius: 40px;
+  background: #AAF200;
+  font-size: 1.2em;
+  font-weight: bolder;
+  font-family: 'arial', sans-serif;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin: 40px 0;
+}
+
+#submit:hover{
+  background: black;
+  color: #AAF200;
+}
+
