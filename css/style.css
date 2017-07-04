@@ -18,6 +18,10 @@ h1, h2, h3, p, li, ul, img, i, a, span {
   padding: 0;
 }
 
+input:focus[type=submit]{
+  outline: 0;
+}
+
 /**************************
           HEADER
 **************************/
